@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>WooliesX Shopping Cart – Components</title>
+
+  <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+
+  <script type="module" src="/build/wooliesx-components.esm.js"></script>
+  <script nomodule src="/build/wooliesx-components.js"></script>
+
+  <link rel="stylesheet" href="/build/wooliesx-components.css">
+</head>
+<body>
+
+  <h1>WooliesX – Components</h1>
+
+  <h2>Shopping List Item</h2>
+  <div>
+    <div class="demo-wrapper" style="width: 35rem;">
+      <wx-shopping-list-item
+        name="Quilton Classic Toilet Tissue 3 Ply 8 pack"
+        imageUrl="https://cdn0.woolworths.media/content/wowproductimages/medium/158767.jpg"
+        price="7.5"
+        productId="123">
+      </wx-shopping-list-item>
+    </div>
+  </div>
+  <div>
+    <div class="demo-wrapper" style="width: 35rem;">
+      <wx-shopping-list-item name="Toilet Paper"></wx-shopping-list-item>
+    </div>
+  </div>
+  <div>
+    <div class="demo-wrapper" style="width: 35rem;">
+      <wx-shopping-list-item name="Toilet Paper" deleted="true"></wx-shopping-list-item>
+    </div>
+  </div>
+
+  <h2>Product</h2>
+  <div class="demo-wrapper">
+    <wx-product
+      name="Quilton Classic Toilet Tissue 3 Ply 8 pack"
+      imageUrl="https://cdn0.woolworths.media/content/wowproductimages/medium/158767.jpg"
+      price="7.5"
+      priceNotes="$0.52 / 100SS"
+      productId="123">
+    </wx-product>
+  </div>
+
+  <h2>Button</h2>
+  <div style="width: 10rem">
+    <div class="demo-wrapper" style="margin-bottom: .5rem;">
+      <wx-button>Primary</wx-button>  
+    </div>
+    <div class="demo-wrapper">
+      <wx-button look="secondary">Secondary</wx-button>
+    </div>
+  </div>
+
+  <h2>Button – Numbered</h2>
+  <div class="demo-wrapper" style="width: 10rem">
+    <wx-button-numbered number="3">Numbered</wx-button-numbered>
+  </div>
+
+  <h2>Price</h2>
+  <div class="demo-wrapper">
+    <wx-price amount="123.5"></wx-price>
+  </div>
+
+  <h2>Search Box</h2>
+  <div class="demo-wrapper" style="width: 15rem">
+    <wx-search-box placeholder="Search for an item"></wx-search-box>
+  </div>
+
+  <h2>Actionable Suggestion</h2>
+  <div class="demo-wrapper" style="width: 30rem">
+    <wx-actionable-suggestion
+      suggestion="Add 'Toilet paper'?"
+      action="Add this item">
+    </wx-actionable-suggestion>
+  </div>
+
+</body>
+</html>

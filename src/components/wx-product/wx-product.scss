@@ -1,0 +1,55 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--app-border-color-1);
+  box-shadow: 2px 2px 2px var(--app-background-color-2);
+  width: 15rem;
+}
+
+:host, .pic {
+  border-radius: var(--app-default-radius);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--app-spacing-1);
+  margin-bottom: var(--app-spacing-1);
+}
+
+.title {
+  align-self: flex-start;
+  flex: 1
+}
+
+.pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+
+.pic {
+  padding: var(--app-spacing-2);
+  height: 100%;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+}
+
+.price-notes {
+  justify-self: flex-end;
+  font-size: var(--app-font-size-small);
+}
+
+.actions-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-button {
+  margin: 0 var(--app-spacing-1) var(--app-spacing-1) var(--app-spacing-1);
+}

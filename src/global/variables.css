@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body,
+input,
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --app-theme-color-1: #188841;
+  --app-theme-color-1-dark: #1D6B18;
+  --app-theme-color-1-xdark: #124812;
+
+  --app-theme-color-2: #e9ebeb;
+  --app-theme-color-2-dark: #BEBEBE;
+  --app-theme-color-2-xdark: gray;
+
+  --app-background-color-1: white;
+  --app-background-color-2: #efefef;
+
+  --app-border-color-1: silver;
+  --app-border-color-2: var(--app-theme-color-2-xdark);
+
+  --app-default-radius: .25rem;
+
+  --app-spacing-1: .5rem;
+  --app-spacing-2: calc(var(--app-spacing-1) * 2);
+  --app-spacing-3: calc(var(--app-spacing-2) * 2);
+
+  --app-font-size-small: .8rem;
+  --app-font-size-superscript: 1.25rem;
+  --app-font-size-standard: 1rem;
+  --app-font-size-large: 2rem;
+
+  --app-field-size: 2.5rem;
+
+  --app-icon-small-size: 1.5rem;
+  --app-icon-small-medium: 2rem;
+}
+
+.demo-wrapper {
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  border: dashed 1px gray;
+}

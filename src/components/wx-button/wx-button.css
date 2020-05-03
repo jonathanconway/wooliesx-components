@@ -1,0 +1,44 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: var(--app-field-size);
+  height: var(--app-field-size);
+  padding: var(--app-spacing-1);
+  border-radius: var(--app-default-radius);
+  border: none;
+  cursor: pointer;
+  font-size: var(--app-font-size-standard);
+}
+
+button > * {
+  margin-right: var(--app-spacing-1);
+}
+
+button[disabled] {
+  opacity: .5;
+  cursor: not-allowed;
+  color: black;
+}
+
+button.look-primary {
+  background-color: var(--app-theme-color-1);
+  border: solid 1px var(--app-theme-color-1-dark);
+  color: white;
+}
+
+button.look-primary:not([disabled]):hover {
+  background-color: var(--app-theme-color-1-dark);
+  border-color: var(--app-theme-color-1-xdark);
+}
+
+button.look-secondary {
+  background-color: var(--app-theme-color-2);
+  border: solid 1px var(--app-theme-color-2-dark);
+}
+
+button.look-secondary:not([disabled]):hover {
+  background-color: var(--app-theme-color-2-dark);
+  border-color: var(--app-theme-color-2-xdark);
+}

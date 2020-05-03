@@ -1,0 +1,27 @@
+:host {
+  --left-padding: calc(var(--app-spacing-1) / 2);
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: var(--app-field-size);
+}
+
+.search-input {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--app-spacing-1) 0 calc((var(--app-spacing-1) * 1.5) + var(--app-icon-small-size));
+  border-radius: var(--app-default-radius);
+  border: solid 1px var(--app-theme-color-2-dark);
+  font-size: var(--app-font-size-standard);
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--app-spacing-1);
+  top: 50%;
+  height: var(--app-icon-small-size);
+  width: var(--app-icon-small-size);
+  margin-top: calc(0rem - (var(--app-icon-small-size) / 2));
+}

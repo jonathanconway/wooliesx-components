@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex: 1;
+  justify-self: flex-start;
+  align-content: flex-start;
+}
+
+.price-currency {
+  font-size: var(--app-font-size-superscript);
+  line-height: 1.25rem;
+}
+
+.price-amount {
+  font-size: var(--app-font-size-large);
+  line-height: 1.75rem;
+}
