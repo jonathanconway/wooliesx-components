@@ -19,10 +19,10 @@
 
 ## Events
 
-| Event             | Description | Type                                  |
-| ----------------- | ----------- | ------------------------------------- |
-| `clickAddToCart`  |             | `CustomEvent<{ productId: string; }>` |
-| `clickSaveToList` |             | `CustomEvent<{ productId: string; }>` |
+| Event             | Description | Type                  |
+| ----------------- | ----------- | --------------------- |
+| `clickAddToCart`  |             | `CustomEvent<string>` |
+| `clickSaveToList` |             | `CustomEvent<string>` |
 
 
 ## Dependencies

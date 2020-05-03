@@ -8,12 +8,15 @@ button {
   padding: var(--app-spacing-1);
   border-radius: var(--app-default-radius);
   border: none;
-  cursor: pointer;
   font-size: var(--app-font-size-standard);
 }
 
 button > * {
   margin-right: var(--app-spacing-1);
+}
+
+button, button * {
+  cursor: pointer;
 }
 
 button[disabled] {

@@ -1,6 +1,6 @@
 {
   "name": "wooliesx-components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Woolies Stencil Components",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

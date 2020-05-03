@@ -113,12 +113,8 @@ declare namespace LocalJSX {
     interface WxProduct {
         "imageUrl"?: string;
         "name"?: string;
-        "onClickAddToCart"?: (event: CustomEvent<{
-            productId: string;
-        }>) => void;
-        "onClickSaveToList"?: (event: CustomEvent<{
-            productId: string;
-        }>) => void;
+        "onClickAddToCart"?: (event: CustomEvent<string>) => void;
+        "onClickSaveToList"?: (event: CustomEvent<string>) => void;
         "price"?: number;
         "priceNotes"?: string;
         "productId"?: string;
