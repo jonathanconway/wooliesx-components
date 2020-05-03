@@ -21,20 +21,18 @@ export class WxProduct {
     composed: true,
     cancelable: true,
     bubbles: true,
-  }) clickAddToCart: EventEmitter<{ productId: string }>;
+  }) clickAddToCart: EventEmitter<string>;
 
   @Event({
     eventName: 'clickSaveToList',
     composed: true,
     cancelable: true,
     bubbles: true,
-  }) clickSaveToList: EventEmitter<{ productId: string }>;
+  }) clickSaveToList: EventEmitter<string>;
   
   handleClickSaveToList() {
     this.savedToList = true;
-
-    const { productId } = this;
-    this.clickAddToCart.emit({ productId });
+    this.clickSaveToList.emit(this.productId);
   }
 
   render() {
@@ -57,7 +55,7 @@ export class WxProduct {
         <div class="actions-row">
           <wx-button
             class="add-to-cart action-button"
-            onClick={() => this.clickAddToCart.emit({ productId })}>
+            onClick={() => this.clickAddToCart.emit(productId)}>
 
             <ion-icon name="md-cart"></ion-icon> 
             Add to Cart
