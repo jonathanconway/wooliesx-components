@@ -27,6 +27,7 @@ export namespace Components {
         "price": number;
         "priceNotes": string;
         "productId": string;
+        "savedToList": boolean;
     }
     interface WxSearchBox {
         "placeholder": string;
@@ -121,6 +122,7 @@ declare namespace LocalJSX {
         "price"?: number;
         "priceNotes"?: string;
         "productId"?: string;
+        "savedToList"?: boolean;
     }
     interface WxSearchBox {
         "onSearch"?: (event: CustomEvent<string>) => void;

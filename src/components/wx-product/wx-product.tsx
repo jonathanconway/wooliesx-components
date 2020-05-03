@@ -1,4 +1,4 @@
-import { Component, Host, h, State, Prop, Event, EventEmitter } from '@stencil/core';
+import { Component, Host, h, Prop, Event, EventEmitter } from '@stencil/core';
 
 const SAVE_TO_LIST_TEXT = 'Save to list';
 const SAVED_TO_LIST_TEXT = 'Saved to list';
@@ -14,6 +14,7 @@ export class WxProduct {
   @Prop({ attribute: 'price' }) price: number;
   @Prop({ attribute: 'priceNotes' }) priceNotes: string;
   @Prop({ attribute: 'productId' }) productId: string;
+  @Prop({ attribute: 'savedToList' }) savedToList: boolean;
 
   @Event({
     eventName: 'clickAddToCart',
@@ -28,8 +29,6 @@ export class WxProduct {
     cancelable: true,
     bubbles: true,
   }) clickSaveToList: EventEmitter<{ productId: string }>;
-  
-  @State() savedToList: boolean = false;
   
   handleClickSaveToList() {
     this.savedToList = true;
