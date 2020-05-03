@@ -11,6 +11,7 @@
 
 .main-container {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   padding: var(--app-spacing-1);
