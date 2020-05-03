@@ -37,7 +37,7 @@ export class WxShoppingListItem {
 
   renderStandardActions() {
     return (
-      <div class="actions">
+      <div class="actions-col">
         {this.productId &&
           <wx-button
             class="add-to-cart-button"
@@ -61,7 +61,7 @@ export class WxShoppingListItem {
 
   renderDeletedActions() {
     return (
-      <div class="actions">
+      <div class="actions-col">
         <wx-button class="bring-back-button" look="secondary" onClick={() => this.clickUndoDelete.emit()}>
           <ion-icon name="md-undo"></ion-icon> 
           Bring back

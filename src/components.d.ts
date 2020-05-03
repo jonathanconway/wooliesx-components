@@ -39,8 +39,6 @@ export namespace Components {
         "price"?: number;
         "productId"?: string;
     }
-    interface WxShoppingListPreview {
-    }
 }
 declare global {
     interface HTMLWxActionableSuggestionElement extends Components.WxActionableSuggestion, HTMLStencilElement {
@@ -85,12 +83,6 @@ declare global {
         prototype: HTMLWxShoppingListItemElement;
         new (): HTMLWxShoppingListItemElement;
     };
-    interface HTMLWxShoppingListPreviewElement extends Components.WxShoppingListPreview, HTMLStencilElement {
-    }
-    var HTMLWxShoppingListPreviewElement: {
-        prototype: HTMLWxShoppingListPreviewElement;
-        new (): HTMLWxShoppingListPreviewElement;
-    };
     interface HTMLElementTagNameMap {
         "wx-actionable-suggestion": HTMLWxActionableSuggestionElement;
         "wx-button": HTMLWxButtonElement;
@@ -99,7 +91,6 @@ declare global {
         "wx-product": HTMLWxProductElement;
         "wx-search-box": HTMLWxSearchBoxElement;
         "wx-shopping-list-item": HTMLWxShoppingListItemElement;
-        "wx-shopping-list-preview": HTMLWxShoppingListPreviewElement;
     }
 }
 declare namespace LocalJSX {
@@ -146,8 +137,6 @@ declare namespace LocalJSX {
         "price"?: number;
         "productId"?: string;
     }
-    interface WxShoppingListPreview {
-    }
     interface IntrinsicElements {
         "wx-actionable-suggestion": WxActionableSuggestion;
         "wx-button": WxButton;
@@ -156,7 +145,6 @@ declare namespace LocalJSX {
         "wx-product": WxProduct;
         "wx-search-box": WxSearchBox;
         "wx-shopping-list-item": WxShoppingListItem;
-        "wx-shopping-list-preview": WxShoppingListPreview;
     }
 }
 export { LocalJSX as JSX };
@@ -170,7 +158,6 @@ declare module "@stencil/core" {
             "wx-product": LocalJSX.WxProduct & JSXBase.HTMLAttributes<HTMLWxProductElement>;
             "wx-search-box": LocalJSX.WxSearchBox & JSXBase.HTMLAttributes<HTMLWxSearchBoxElement>;
             "wx-shopping-list-item": LocalJSX.WxShoppingListItem & JSXBase.HTMLAttributes<HTMLWxShoppingListItemElement>;
-            "wx-shopping-list-preview": LocalJSX.WxShoppingListPreview & JSXBase.HTMLAttributes<HTMLWxShoppingListPreviewElement>;
         }
     }
 }

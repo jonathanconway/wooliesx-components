@@ -3,7 +3,6 @@
 
   display: flex;
   flex-direction: row;
-  min-width: 35rem;
 
   background-color: var(--app-background-color-2);
   
@@ -54,13 +53,15 @@
   align-self: center;
 }
 
-.actions {
+.actions-col {
   align-items: center;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  width: 15rem;
 }
 
-.actions > * {
+.actions-col > * {
   margin-right: var(--app-spacing-1);
 }
 
