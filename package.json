@@ -1,6 +1,6 @@
 {
   "name": "wooliesx-components",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Woolies Stencil Components",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -19,7 +19,9 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "pre-publish": "rm -rf www && rm -rf dist && npm run build",
+    "deploy": "surge ./www conwy-wooliesx-components.surge.sh"
   },
   "devDependencies": {
     "@stencil/core": "1.12.7",
