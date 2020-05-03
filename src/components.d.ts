@@ -123,7 +123,7 @@ declare namespace LocalJSX {
         "productId"?: string;
     }
     interface WxSearchBox {
-        "onSearch"?: (event: CustomEvent<any>) => void;
+        "onSearch"?: (event: CustomEvent<string>) => void;
         "placeholder"?: string;
         "value"?: string;
     }

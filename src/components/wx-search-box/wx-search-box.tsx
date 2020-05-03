@@ -15,11 +15,7 @@ export class WxSearchBox {
     composed: true,
     cancelable: true,
     bubbles: true,
-  }) search: EventEmitter;
-
-  handleInput(e: Event) {
-    this.search.emit((e.target as HTMLInputElement).value);
-  }
+  }) search: EventEmitter<string>;
 
   render() {
     return (
@@ -29,8 +25,8 @@ export class WxSearchBox {
           type="search"
           value={this.value}
           placeholder={this.placeholder}
-  
-          onInput={this.handleInput}
+
+          onInput={(e) => this.search.emit((e.target as HTMLInputElement).value)}
         />
         <ion-icon class="search-icon" name="md-search"></ion-icon>
       </Host>
