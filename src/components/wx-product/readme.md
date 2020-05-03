@@ -7,13 +7,14 @@
 
 ## Properties
 
-| Property     | Attribute    | Description | Type     | Default     |
-| ------------ | ------------ | ----------- | -------- | ----------- |
-| `imageUrl`   | `imageurl`   |             | `string` | `undefined` |
-| `name`       | `name`       |             | `string` | `undefined` |
-| `price`      | `price`      |             | `number` | `undefined` |
-| `priceNotes` | `pricenotes` |             | `string` | `undefined` |
-| `productId`  | `productid`  |             | `string` | `undefined` |
+| Property      | Attribute     | Description | Type      | Default     |
+| ------------- | ------------- | ----------- | --------- | ----------- |
+| `imageUrl`    | `imageurl`    |             | `string`  | `undefined` |
+| `name`        | `name`        |             | `string`  | `undefined` |
+| `price`       | `price`       |             | `number`  | `undefined` |
+| `priceNotes`  | `pricenotes`  |             | `string`  | `undefined` |
+| `productId`   | `productid`   |             | `string`  | `undefined` |
+| `savedToList` | `savedtolist` |             | `boolean` | `undefined` |
 
 
 ## Events
